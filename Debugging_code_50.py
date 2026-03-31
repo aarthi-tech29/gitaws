@@ -509,14 +509,14 @@ df.select("sales").show()   #  correct column
 # Usually, the correct key is something like "customer_id"
 
 # Output:
-joined_df = transactions_df.join(customers_df, on="customer_id", how="inner")
-joined_df.show()
+# joined_df = transactions_df.join(customers_df, on="customer_id", how="inner")
+# joined_df.show()
 
-joined_df = transactions_df.join(
-    customers_df,
-    transactions_df.customer_id == customers_df.id,
-    "inner"
-)
+# joined_df = transactions_df.join(
+#     customers_df,
+#     transactions_df.customer_id == customers_df.id,
+#     "inner"
+# )
 # =================================================
 # 48. Debugging Numeric Conversion
 # import pandas as pd
